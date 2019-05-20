@@ -75,8 +75,6 @@ class App extends Component {
           <Navigation links={links} />
         </header>
         <main>
-        <div style={{ marginBottom: 200 }}>
-        </div>
         <LandingPage />
         <FooterView />
         </main>
