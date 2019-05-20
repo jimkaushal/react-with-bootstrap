@@ -2,10 +2,12 @@ import React from 'react';
 import RowView from '../shared/row-view';
 import HeadingColumn from './heading-row/heading-column';
 import FeatureRow from './feature-row/feature-row';
-
+import Carousel from './carousel/carousel';
 const LandingPage = () => {
 
-    return <div className="container marketing">
+    return <>
+        <Carousel />
+        <div className="container marketing">
         <RowView>
             <HeadingColumn />
             <HeadingColumn />
@@ -45,6 +47,7 @@ const LandingPage = () => {
             </FeatureRow>
         </RowView>
     </div>
+    </>
 };
 
 export default LandingPage;

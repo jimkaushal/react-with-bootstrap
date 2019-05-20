@@ -4,6 +4,7 @@ import './App.scss';
 import { simpleAction } from '../../actions/simpleAction'
 import LandingPage from '../landing-page/lading-page'
 import Navigation from '../shared/navigation'
+import FooterView from '../shared/footer'
 const mapDispatchToProps = dispatch => ({
   simpleAction: () => dispatch(simpleAction())
 })
@@ -69,16 +70,18 @@ class App extends Component {
       { label: 'Disabled', disabled: true }
     ];
 
-    return (
-      <div className="App">
+    return <>
         <header>
           <Navigation links={links} />
         </header>
+        <main>
         <div style={{ marginBottom: 200 }}>
         </div>
         <LandingPage />
-      </div>
-    );
+        <FooterView />
+        </main>
+      </>
+    
   }
 }
 
